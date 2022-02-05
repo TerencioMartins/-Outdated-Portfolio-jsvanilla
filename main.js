@@ -36,3 +36,30 @@ arrow.addEventListener('click', () => {
     
 })
 
+const pokedex = document.querySelector('.pokedex')
+pokedex.addEventListener('mouseenter',() => {
+    pokedex.classList.add('animate__animated', 'animate__infinite', 'animate__pulse')
+})
+pokedex.addEventListener('mouseleave', () => {
+    pokedex.classList.remove('animate__animated', 'animate__infinite', 'animate__pulse')
+})
+
+const artigo2 = document.querySelector('.articlePokedex')
+const titulo2 = document.querySelector('.tituloPokedex')
+const div = document.querySelector('.textoPokedex')
+pokedex.addEventListener('click', () => {
+    console.log(textUp);
+    switch (textUp) {
+        case false:
+            document.getElementById("idPokedex").style.display = "inline-block"
+            div.className = 'textoPokedex animate__animated animate__fadeInLeft'
+            textUp = true;
+            break
+
+        case true:
+            
+            div.className ='textoPokedex animate__animated animate__fadeOutLeft'
+            textUp = false;
+            break
+    }
+})
