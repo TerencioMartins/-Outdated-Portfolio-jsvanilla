@@ -31,10 +31,6 @@ zeroTwo.addEventListener('mouseenter', () => {
 zeroTwo.addEventListener('mouseleave', () => {
     zeroTwo.classList.remove('animate__animated', 'animate__infinite', 'animate__pulse')
 })
-const arrow = document.querySelector('.arrow')
-arrow.addEventListener('click', () => {
-    
-})
 
 const pokedex = document.querySelector('.pokedex')
 pokedex.addEventListener('mouseenter',() => {

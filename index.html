@@ -1,64 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script type= "module" src="main.js"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="module" src="main.js"></script>
+
     <title>Portfólio</title>
 </head>
+
 <body ondragstart="return false;" ondrop="return false;">
     <header>
-       <nav class="nav1">
-        <button class="navButtons" onclick="window.location.href='#teste3'">
-            <span> Sobre mim </span>
-        </button>
-        <button class="navButtons" onclick="window.location.href='#anchor'" >
-            <span> Projetos </span>
-        </button>
-       </nav>
-       <button class="centerButton"> </button>
+        <nav class="nav1">
+            <button class="navButtons" onclick="javascript:window.open('https://github.com/TerencioMartins', '_blank')">
+                <span> github </span>
+            </button>
+            <button class="navButtons" onclick="window.location.href='#anchor'">
+                <span> Projetos </span>
+            </button>
+        </nav>
+        <button class="centerButton"> </button>
     </header>
 
-    
+
     <section class="centro">
-            <img class="foto"src="zerotwo.png">
+        <img class="foto" src="zerotwo.png">
     </section>
 
     <aside class="textoCentro" id="teste3">
         <h1 class="tituloCentro" id="teste2">Olá!</h1> <br>
-        <article class="articleCentro" id="teste">Eu sou Terêncio Martins, estudante de front-end e apaixonado por design. Comecei os estudos em programação por minha conta
-            e quando percebi já estava almeijando o desenvolvimento Front-end como minha carreira dos sonhos. Meu foco no momento é me aprofundar ainda mais em programação 
-        e dominar assuntos mais complexos tendo como exemplo bibliotecas famosas como React. </article> <br>
-         <button class = "navButtons" id = "contatoButton">Contato</button>
+        <article class="articleCentro" id="teste">Eu sou Terêncio Martins, estudante de front-end e apaixonado por
+            design. Comecei os estudos em programação por minha conta
+            e quando percebi já estava almeijando o desenvolvimento Front-end como minha carreira dos sonhos. Meu foco
+            no momento é me aprofundar ainda mais em programação
+            e dominar assuntos mais complexos tendo como exemplo bibliotecas famosas como React. </article> <br>
+        <button class="navButtons" id="contatoButton">Contato</button>
     </aside>
-        <img class = "arrow animate__animated animate__infinite animate__pulse" src="Arrow.png" onclick="window.location.href='#anchor'">
+    <img class="arrow" src="Arrow.png"
+        onclick="window.location.href='#anchor'">
 
-        <div class = "pokedex2" id="anchor">
-            <img class = "pokedex" src="Pokedex.png" id="ImgPokedex">
+    <div class="pokedex2" id="anchor">
+        <img class="pokedex" src="Pokedex.png" id="ImgPokedex">
+    </div>
+    <div class="textoPokedex" id="idPokedex">
+        <h1 class="tituloPokedex">Pokédex</h1>
+        <article class="articlePokedex">Esse foi um projeto realizado com intuito de aprofundar um pouco mais em APIs e
+            exercitar
+            práticas que necessitam de bastante atenção como DOM e CSS.</article> <br>
+        <a href="https://terenciomartins.github.io/Pokedex/" target="_blank"> <button class="navButtons"
+                id="pokedexButton">Acesse Aqui!</button></a>
+    </div>
+    <aside class="anime">
+        <img class="animeImg" src="anime.png">
+    </aside class="imagemAnime">
+    <div class="textoAnime" id="idAnime">
+        <h1 class="tituloAnime">MayAnimeList</h1>
+        <article class="articleAnime"> Aplicação usando Jikan API (uma API não oficial do site "MyAnimeList"), nesse
+            projeto um pouco mais complexo fiz uso do localStorage e de uma API
+            um pouco mais complexa do que a da Pokedex.
+        </article> <br>
+        <button class="navButtons" id="animeButton"
+            onclick="javascript:window.open('https://terenciomartins.github.io/MayAnimeList/', '_blank')">Acesse
+            aqui!</button>
+    </div>
+    <footer class="rodape">
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <button class="navButtons" id="rodapeButton">Terencio Martins</button>
+                    <div class="col item social"><a href="https://github.com/TerencioMartins" target="_blank"><i
+                                class="fa fa-github"></i></a><a
+                            href="https://www.linkedin.com/in/terencio-martins-463b59230/" target="_blank"><i
+                                class="fa fa-linkedin"></i><a href="mailto:zerofity0@gmail.com" target="_blank"><i
+                                    class="fa fa-google"></i></a></div>
+                    <p class="copyright">Terencio Martins © 2022</p>
+                </div>
+            </footer>
         </div>
-        <div class = "textoPokedex" id="idPokedex">
-            <h1 class="tituloPokedex">Pokédex</h1>
-            <article class="articlePokedex">Esse foi um projeto realizado com intuito de aprofundar um pouco mais em APIs e exercitar
-                práticas que necessitam de bastante atenção como DOM e CSS.</article> <br>
-                 <a href="https://terenciomartins.github.io/Pokedex/"> <button class="navButtons" id="pokedexButton">Acesse Aqui!</button></a>
-        </div>
-        <aside class = "anime">
-            <img class = "animeImg" src="anime.png">
-        </aside class = "imagemAnime">
-        <div class="textoAnime" id="idAnime">
-            <h1 class="tituloAnime">MayAnimeList</h1>
-            <article class="articleAnime"> Aplicação usando Jikan API (uma API não oficial do site "MyAnimeList"), nesse projeto um pouco mais complexo fiz uso do localStorage e de uma API
-                um pouco mais complexa do que a da Pokedex.
-            </article> <br>
-            <button class="navButtons" id="animeButton" onclick="window.location.href='https://terenciomartins.github.io/MayAnimeList/'">Acesse aqui!</button>
-        </div>
-    <footer>
-
     </footer>
 </body>
+
 </html>
