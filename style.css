@@ -170,7 +170,7 @@ body {
        margin-top: 180px;
        cursor: pointer;
    }
-   .pokedex{
+   .pokedex, .animeImg{
        width: 450px;
        height: 450px;
        display:inline-block;
@@ -211,4 +211,34 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #fafafa;
     border-radius: 30px;
+}
+
+.animeImg {
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+.anime {
+    float: right;
+    /* display: inline-block; */
+       padding-right: 15%;
+       padding-top: 5%;
+}
+.textoAnime {
+    display: none;
+      position: absolute;
+       right: 45%;
+        top: 120%;
+}
+.articleAnime {
+    width: 400px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+}
+.tituloAnime{
+    display: inline-block;
+    padding-left: 50px;
+}
+#animeButton {
+    margin-left: 7em;
 }
