@@ -4,7 +4,7 @@ body {
     background: linear-gradient(-45deg, rgb(17, 17, 17), rgb(25, 25, 26), #313133, #3a3a3a);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
+    height: 100%;
 }
 
 @keyframes gradient {
@@ -149,8 +149,8 @@ body {
 .textoCentro {
     display: none;
     position: absolute;
-    left: 55%;
-    top: 40%;
+    left: 50%;
+    top: 35%;
 
 }
 
@@ -196,8 +196,8 @@ body {
 .textoPokedex {
     display: none;
     position: absolute;
-    right: 25%;
-    top: 115%;
+    right: 30%;
+    top: 120%;
 }
 
 .tituloPokedex {
@@ -246,7 +246,7 @@ body {
     display: none;
     position: absolute;
     right: 45%;
-    top: 120%;
+    top: 180%;
 }
 
 .articleAnime {
@@ -365,4 +365,9 @@ body {
     justify-content: center;
     margin-left: 41.5%;
     margin-bottom: 2%;
+}
+.rodape {
+    width: 100%;
+    position: absolute;
+    top: 215%;
 }
